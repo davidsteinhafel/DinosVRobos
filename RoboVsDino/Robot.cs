@@ -8,10 +8,10 @@ namespace RoboVsDino
 {
     class Robot
     {
-        string name;
-        double health;
-        double powerLevel;
-        Weapon weapon;
+        public string name;
+        public double health;
+        public double powerLevel;
+        public Weapon weapon;
         
         public Robot(string name, double health, double powerLevel, Weapon weapon)
         {

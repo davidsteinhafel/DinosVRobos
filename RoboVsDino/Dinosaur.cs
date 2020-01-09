@@ -8,10 +8,10 @@ namespace RoboVsDino
 {
     class Dinosaur
     {
-        string type;
-        double health;
-        double energy;
-        double attackPower;
+        public string type;
+        public double health;
+        public double energy;
+        public double attackPower;
 
         public Dinosaur(string type, double health, double energy, double attackPower)
         {

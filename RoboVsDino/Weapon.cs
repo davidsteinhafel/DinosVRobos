@@ -8,8 +8,8 @@ namespace RoboVsDino
 {
     class Weapon
     {
-        double attackPower;
-        string weaponType;
+        public double attackPower;
+        public string weaponType;
 
         public Weapon(double attackPower, string weaponType)
         {

@@ -13,6 +13,9 @@ namespace RoboVsDino
             Simulation simulation = new Simulation();
             
             simulation.startGame();
+
+            Console.ReadLine();
         }
+        
     }
 }
