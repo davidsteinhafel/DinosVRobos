@@ -30,7 +30,8 @@ namespace RoboVsDino
             Console.WriteLine("\nFIGHT!");
             battlefield.StartBattle();
             Console.ReadLine();
-            Console.WriteLine("GAME OVER");
+            battlefield.EndBattle();
+            
 
         }
         

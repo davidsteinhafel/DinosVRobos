@@ -14,7 +14,7 @@ namespace RoboVsDino
         {
             Dinosaur dinosaurs1 = new Dinosaur("Tyrannasaurus Rex", 8000, 500, 900);
             Dinosaur dinosaur2 = new Dinosaur("Triceratops", 12000, 500, 700);
-            Dinosaur dinosaur3 = new Dinosaur("Velociraptor", 5500, 1000, 800);
+            Dinosaur dinosaur3 = new Dinosaur("Velociraptor", 5500, 1000, 1300);
             dinosaurs.Add(dinosaurs1);
             dinosaurs.Add(dinosaur2);
             dinosaurs.Add(dinosaur3);
