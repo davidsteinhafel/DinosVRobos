@@ -11,7 +11,7 @@ namespace RoboVsDino
         public string type;
         public double health;
         public double energy;
-        public double attackPower;
+        public double attackType;
         
         
 
@@ -20,15 +20,24 @@ namespace RoboVsDino
             this.type = type;
             this.health = health;
             this.energy = energy;
-            this.attackPower = attackPower;
+            this.attackType = attackPower;
         }
       public void Attack(Robot robot)
         {
-            Console.WriteLine(type + " " + attackPower + " AP");
-            Console.ReadLine();
-            robot.health -= attackPower;
-            Console.WriteLine(robot.name + " HP Remaining = " + robot.health + " HP");
-            Console.ReadLine();
+            if(health > 0)
+            {
+                Console.WriteLine(type + " " + attackType + " AP");
+                Console.ReadLine();
+                robot.health -= attackType;
+                Console.WriteLine(robot.name + " HP Remaining = " + robot.health + " HP");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine(type + " has tragically died!");
+                Console.ReadLine();
+            }
+
         }
     }
 }

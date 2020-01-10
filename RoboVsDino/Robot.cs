@@ -22,11 +22,20 @@ namespace RoboVsDino
         }
         public void Attack(Dinosaur dinosaur)
         {
-            Console.WriteLine(name + " " + weapon.attackPower + " AP");
-            Console.ReadLine();
-            dinosaur.health -= weapon.attackPower;
-            Console.WriteLine(dinosaur.type + " Remaining HP = " + dinosaur.health + " HP");
-            Console.ReadLine();
+            if(health > 0)
+            {
+                Console.WriteLine(name + " " + weapon.attackPower + " AP");
+                Console.ReadLine();
+                dinosaur.health -= weapon.attackPower;
+                Console.WriteLine(dinosaur.type + " Remaining HP = " + dinosaur.health + " HP");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine(name + " has tragically died!");
+                Console.ReadLine();
+            }
+            
         }
 
     }
