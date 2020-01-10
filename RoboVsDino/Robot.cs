@@ -20,6 +20,10 @@ namespace RoboVsDino
             this.powerLevel = powerLevel;
             this.weapon = weapon;
         }
+        public void Attack(Dinosaur dinosaur)
+        {
+            dinosaur.health -= weapon.attackPower;
+        }
 
     }
 }

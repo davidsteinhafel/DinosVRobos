@@ -27,6 +27,10 @@ namespace RoboVsDino
         {
             Console.WriteLine("You are now entering " + battlefield.name + " located in " + battlefield.location);
             battlefield.PrintOutContestants();
+            Console.WriteLine("FIGHT!");
+            battlefield.StartBattle();
+            Console.ReadLine();
+
         }
 
 

@@ -26,6 +26,7 @@ namespace RoboVsDino
         {
             foreach (Dinosaur dinosaur in herd.dinosaurs)
             {
+                
                 Console.WriteLine("Dinosaur" + dinosaur.type);
             }
             foreach (Robot robot in fleet.robots)
@@ -36,7 +37,14 @@ namespace RoboVsDino
 
         public void StartBattle()
         {
+            while (fleet.robots[0].health >= 0)
+            {
+                
+                herd.dinosaurs[0].Attack(fleet.robots[0]);
+                
+            }
 
+            
         }
     }
 }
