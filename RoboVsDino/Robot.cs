@@ -25,7 +25,7 @@ namespace RoboVsDino
             Console.WriteLine(name + " " + weapon.attackPower + " AP");
             Console.ReadLine();
             dinosaur.health -= weapon.attackPower;
-            Console.WriteLine(dinosaur.type + " Damage Taken " + dinosaur.health + " HP");
+            Console.WriteLine(dinosaur.type + " Remaining HP = " + dinosaur.health + " HP");
             Console.ReadLine();
         }
 

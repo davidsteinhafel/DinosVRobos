@@ -25,12 +25,14 @@ namespace RoboVsDino
 
         public void GoToBattle()
         {
-            Console.WriteLine("You are now entering " + battlefield.name + " located in " + battlefield.location);
+            Console.WriteLine("\nYou are now entering " + battlefield.name + " located in " + battlefield.location);
             battlefield.PrintOutContestants();
-            Console.WriteLine("FIGHT!");
+            Console.WriteLine("\nFIGHT!");
             battlefield.StartBattle();
             Console.ReadLine();
+            Console.WriteLine("GAME OVER");
 
         }
+        
     }
 }
