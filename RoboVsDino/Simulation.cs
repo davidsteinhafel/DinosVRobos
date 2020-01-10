@@ -32,17 +32,5 @@ namespace RoboVsDino
             Console.ReadLine();
 
         }
-
-
-        //public void makeBattlefieldList()
-        //{
-        //    Battlefield battlefield1 = new Battlefield("Icey Gourge", "Nome, Alaska");
-        //    Battlefield battlefield2 = new Battlefield("Volcano Summit", "Honolulu, Hawaii");
-
-        //    List<Battlefield> battlefields = new List<Battlefield>();
-        //    battlefields.Add(battlefield1);
-        //    battlefields.Add(battlefield2);
-        //}
     }
-
 }

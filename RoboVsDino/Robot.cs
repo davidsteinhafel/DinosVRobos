@@ -22,7 +22,11 @@ namespace RoboVsDino
         }
         public void Attack(Dinosaur dinosaur)
         {
+            Console.WriteLine(name + " " + weapon.attackPower + " AP");
+            Console.ReadLine();
             dinosaur.health -= weapon.attackPower;
+            Console.WriteLine(dinosaur.type + " Damage Taken " + dinosaur.health + " HP");
+            Console.ReadLine();
         }
 
     }

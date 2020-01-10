@@ -24,10 +24,11 @@ namespace RoboVsDino
         }
       public void Attack(Robot robot)
         {
+            Console.WriteLine(type + " " + attackPower + " AP");
+            Console.ReadLine();
             robot.health -= attackPower;
-            double result;
-            result = robot.health;
-            Console.WriteLine(result);
+            Console.WriteLine(robot.name + " Damage Taken " + robot.health + " HP");
+            Console.ReadLine();
         }
     }
 }
